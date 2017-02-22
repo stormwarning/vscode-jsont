@@ -2,7 +2,11 @@
     "name": "json-template",
     "displayName": "JSON-Template",
     "description": "JSON-Template / Squarespace language support for Visual Studio Code.",
-    "version": "0.1.0",
+    "icon": "/images/squarespace-white.png",
+    "galleryBanner": {
+        "color": "#222"
+    },
+    "version": "0.1.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/stormwarning/vscode-jsont.git"
