@@ -2,7 +2,7 @@
     "name": "json-template",
     "displayName": "JSON-Template",
     "description": "JSON-Template / Squarespace language support for Visual Studio Code.",
-    "icon": "/images/squarespace-white.png",
+    "icon": "images/squarespace-white.png",
     "galleryBanner": {
         "color": "#222"
     },
