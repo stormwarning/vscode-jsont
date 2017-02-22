@@ -1,0 +1,26 @@
+{
+    "name": "vscode-jsont",
+    "displayName": "vscode-jsont",
+    "description": "JSON-Template / Squarespace language support for Visual Studio Code.",
+    "version": "0.1.0",
+    "publisher": "stormwarning",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "jsont",
+            "aliases": ["HTML (JSON-T)", "jsont"],
+            "extensions": [".block",".item",".list",".page",".region"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "jsont",
+            "scopeName": "text.html.jsont",
+            "path": "./syntaxes/jsont.tmLanguage"
+        }]
+    }
+}
