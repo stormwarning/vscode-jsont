@@ -7,7 +7,7 @@
         "color": "#222",
         "theme": "dark"
     },
-    "version": "0.1.1",
+    "version": "0.1.2",
     "repository": {
         "type": "git",
         "url": "https://github.com/stormwarning/vscode-jsont.git"
@@ -20,16 +20,31 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "jsont",
-            "aliases": ["json template", "jsont", "squarespace", "sqsp"],
-            "extensions": [".block", ".item", ".list", ".page", ".region"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "jsont",
-            "scopeName": "text.html.jsont",
-            "path": "./syntaxes/jsont.tmLanguage"
-        }]
+        "languages": [
+            {
+                "id": "jsont",
+                "aliases": [
+                    "json template",
+                    "jsont",
+                    "squarespace",
+                    "sqsp"
+                ],
+                "extensions": [
+                    ".block",
+                    ".item",
+                    ".list",
+                    ".page",
+                    ".region"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "jsont",
+                "scopeName": "text.html.jsont",
+                "path": "./syntaxes/jsont.tmLanguage"
+            }
+        ]
     }
 }
