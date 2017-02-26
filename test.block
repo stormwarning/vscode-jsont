@@ -1,0 +1,46 @@
+
+{# Comments}
+
+{# Line Comment}
+{##BEGIN}
+  Block comment
+{##END}
+
+
+{# Variables}
+
+{@}
+{@index}
+{@|social-button-inline}
+
+{squarespace.page-classes}
+{collection.id}
+
+{@variants|json|htmltag}
+
+{@|apply some-block.block}
+{@|video load-false color-data}
+{sourceUrl|truncate 42}
+{addedOn|date %B %e, %Y}
+{num|pluralize is are}
+{num-people|pluralize/It depends/They depend}
+
+
+{# Directives}
+
+{.space}
+{.meta-left}
+
+{.section}{.alternates with}{.end}
+{.repeated section items}{.end}
+{.if collection.description}{.or}{.end}
+{.if title || body}{.end}
+
+{.var @content item.structuredContent}
+
+{.Debug?}
+{.index?}{.or folder?}{.end}
+{.equal? typeName "in dex"}
+{.equal? @ "index"}
+
+<div class="{.equal? typeName "ind ex"}{.end}"></div>
