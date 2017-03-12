@@ -4,7 +4,7 @@
 {# Line Comment}
 {##BEGIN}
   Block comment
-{##END}
+{END##}
 
 
 {# Variables}
@@ -37,6 +37,7 @@
 {.if title || body}{.end}
 
 {.var @content item.structuredContent}
+{.var @string "my string"}
 
 {.Debug?}
 {.index?}{.or folder?}{.end}
