@@ -1,0 +1,88 @@
+{
+  "name": "stormwarning/vscode-jsont",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/stormwarning/vscode-jsont",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/json-template",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "vscode-jsont",
+      "subhead": "🏷️ JSON-Template / Squarespace language support for VSCode.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "vscode-jsont: 🏷️ JSON-Template / Squarespace language support for VSCode.",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "stormwarning",
+          "repo": "vscode-jsont"
+        }
+      ],
+      "text": "v0.3.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p>JSON-Template (specifically Squarespace) language support for Visual Studio Code.</p>\n<p>Adds JSON grammar for <code>.conf</code> &amp; <code>.preset</code> files. Custom grammar for <code>.block</code>, <code>.item</code>, <code>.list</code>, <code>.page</code>, and <code>.region</code> files extends HTML.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/stormwarning/vscode-jsont",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/stormwarning",
+          "text": "stormwarning"
+        }
+      ]
+    }
+  ]
+}
