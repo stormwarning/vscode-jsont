@@ -2,46 +2,93 @@
 {# Comments}
 
 {# Line Comment}
+
 {##BEGIN}
   Block comment
 {END##}
 
 
+{# Constants}
+
+{.space}
+{.meta-left}
+
+
+{# Directives}
+
+{.if @.main-content}
+{.if @.main-content || items|image-meta}
+{.if @var|image-meta == "my string"}
+{.if collection.description}{.or}{.end}
+{.if title || body}{.end}
+
+{.section website}
+  {siteTitle}
+{.end}
+
+{.repeated section items}
+  If there are any items, repeat this info for each item
+{.end}
+
+{.section item}
+  Item exists.
+{.or}
+  Item does not exist.
+{.end}
+
+{.repeated section items}
+  This stuff shows for each item.
+{.alternates with}
+  ------ {# show this dashed line in between each item}
+{.end}
+
+{.var @firstImg items.0}
+{.var @imageMeta @firstImg|image-meta}
+{.var @pageThumb collection.mainImage}
+{.var @this "String"}
+
+{.section collection}
+  <div class="wrapper{.if @firstImg} has-image{.end}">
+    <div class="thumbnail-container">
+      <img {@pageThumb|image-meta} data-load="false">
+    </div>
+  </div>
+{.end}
+
+
+{# Predicates}
+
+{# JSON-T}
+{.Debug?}
+
+{# Squarespace}
+{.main-image?}{.or external-link?}{.end}
+{.equal? typeName "in dex"}
+{.equal?:arg1:arg 2}
+
+
 {# Variables}
 
+{# Cursor}
 {@}
 {@index}
-{@|social-button-inline}
+{@.collection}
 
+{# System variables}
+{squarespace-headers}
 {squarespace.page-classes}
+{squarespace.page-id}
+
 {collection.id}
 
+{# Template variables}
 {@variants|json|htmltag}
 
+{# Formatters}
+{@|social-button-inline}
 {@|apply some-block.block}
 {@|video load-false color-data}
 {sourceUrl|truncate 42}
 {addedOn|date %B %e, %Y}
 {num|pluralize is are}
 {num-people|pluralize/It depends/They depend}
-
-
-{# Directives}
-
-{.space}
-{.meta-left}
-
-{.section}{.alternates with}{.end}
-{.repeated section items}{.end}
-{.if collection.description}{.or}{.end}
-{.if title || body}{.end}
-
-{.var @content item.structuredContent}
-{.var @string "my string"}
-
-{.Debug?}
-{.index?}{.or folder?}{.end}
-{.equal? typeName "in dex"}
-{.equal? @ "index"}
-
-<div class="{.equal? typeName "ind ex"}{.end}"></div>
