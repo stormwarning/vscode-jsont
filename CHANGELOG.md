@@ -1,13 +1,19 @@
 # Change Log
-All notable changes to the "jsont" extension will be documented in this file.
+All notable changes to the extension will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## 0.3.1 - 2017-04-07
+### Added
+- `.conf` and `.preset` filetypes now assigned JSON language mode.
+
+
 ## 0.3.0 - 2017-03-12
 ### Added
-- Line comment start & end to "block comment" entry in language-configuration.json; since proper block comments aren’t working anyway, and the configuration doesn’t allow for line comments to have an “end” character.
-- Better patterns for obejcts & properties.
-- Patterns for date constants and integers.
+- Line comment start & end to “block comment” entry in `language-configuration.json`; since proper block comments aren’t working anyway, and the configuration doesn’t allow for line comments to have an “end” character.
+- Better patterns for objects & properties.
+- Patterns for date constants & integers.
 - Patterns for bitwise & comparison operators.
 
 ### Changed
