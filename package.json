@@ -37,6 +37,13 @@
                     ".region"
                 ],
                 "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "json",
+                "extensions": [
+                    ".conf",
+                    ".preset"
+                ]
             }
         ],
         "grammars": [
