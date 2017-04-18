@@ -69,7 +69,7 @@
       "metadata": {
         "source": "github.readme"
       },
-      "html": "\n<p>JSON-Template (specifically Squarespace) language support for Visual Studio Code.</p>\n<p>Adds JSON grammar for <code>.conf</code> &amp; <code>.preset</code> files. Custom grammar for <code>.block</code>, <code>.item</code>, <code>.list</code>, <code>.page</code>, and <code>.region</code> files extends HTML.</p>\n"
+      "html": "\n<p><a href=\"https://marketplace.visualstudio.com/items?itemName=stormwarning.json-template\"><img src=\"http://vsmarketplacebadge.apphb.com/version-short/stormwarning.json-template.svg?style=flat-square&amp;label=vsce\"></a>\n<a href=\"https://marketplace.visualstudio.com/items?itemName=stormwarning.json-template\"><img src=\"http://vsmarketplacebadge.apphb.com/installs/stormwarning.json-template.svg?style=flat-square\"></a></p>\n<p>JSON-Template (specifically Squarespace) language support for Visual Studio Code.</p>\n<p>Adds JSON grammar for <code>.conf</code> &amp; <code>.preset</code> files. Custom grammar for <code>.block</code>, <code>.item</code>, <code>.list</code>, <code>.page</code>, and <code>.region</code> files extends HTML.</p>\n"
     },
     {
       "component": "footer",
